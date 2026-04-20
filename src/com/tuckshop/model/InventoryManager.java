@@ -20,7 +20,7 @@ public class InventoryManager {
         System.out.println("\n--- TUCK SHOP CURRENT STOCK ---");
         for (Product item : stockList) {
             System.out.println("Product: " + item.getName() +
-                    " | Quantity: " + item.getQuantity() +
+                    " | Quantity: " + item.getQuantity()
                     " | Unit Price: P" + item.getPrice());
 
             if (item.getQuantity() < 5) {
