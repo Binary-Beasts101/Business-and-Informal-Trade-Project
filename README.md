@@ -22,3 +22,19 @@ This is a Java application designed to be a digital version of the shop's ledger
 5. Restocking an existing product
 6. View a sales summary
 7. Handles invalid input without crashing (e.g. letters where numbers expected etc)
+
+
+
+
+========================================
+        TUCKSHOP MANAGER SYSTEM
+========================================
+ 1. Add new product
+ 2. View all stock
+ 3. Process a sale
+ 4. Search for product
+ 5. Restock a product
+ 6. View sales report
+ 0. Exit
+========================================
+Enter your choice:
