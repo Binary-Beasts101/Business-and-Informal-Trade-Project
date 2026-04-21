@@ -27,11 +27,8 @@ This is a Java application designed to be a digital version of the shop's ledger
 
 
 ====================================
-        
+        TUCKSHOP MANAGER SYSTEM
 ====================================
-
-TUCKSHOP MANAGER SYSTEM
-
  1. Add new product
  2. View all stock
  3. Process a sale
