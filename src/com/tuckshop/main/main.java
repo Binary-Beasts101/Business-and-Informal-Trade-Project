@@ -1,79 +1,51 @@
 package com.tuckshop.main;
 
-import com.tuckshop.model.product;
-import com.tuckshop.model.transactions;
-import com.tuckshop.services.Invetory;
-
-import java.util.ArrayList;
 import java.util.Scanner;
+import com.tuckshop.model.Product;
+import com.tuckshop.model.Food; // Import Food if you are using it
+import com.tuckshop.services.InventoryManager;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
+        InventoryManager myTuckShop = new InventoryManager();
+        Scanner input = new Scanner(System.in);
 
-        Invetory inventory = new Invetory();
-        ArrayList<transactions> transactionsList = new ArrayList<>();
-        Scanner scanner = new Scanner(System.in);
+        // Your pre-loaded items
+        myTuckShop.registerNewProduct(new Food("P01", "Coke", 12.50, 10, 140));
+        myTuckShop.registerNewProduct(new Food("P02", "Chips", 8.00, 20, 250));
 
-        while (true) {
-            System.out.println("\n=== TUCKSHOP INVENTORY SYSTEM ===");
-            System.out.println("1. Add Product");
-            System.out.println("2. View Products");
-            System.out.println("3. Sell Product");
-            System.out.println("4. Low Stock Alert");
-            System.out.println("5. Exit");
-            System.out.print("Choose option: ");
+        boolean active = true;
+        while (active) {
+            System.out.println("\n--- TUCK SHOP MANAGEMENT SYSTEM ---");
+            System.out.println("1. View Stock/Receipt");
+            System.out.println("2. Sell Item");
+            System.out.println("3. Exit System");
+            System.out.print("Select Option: ");
 
-            int choice = scanner.nextInt();
+            String choice = input.nextLine();
 
-            switch (choice) {
+            if (choice.equals("1")) {
+                myTuckShop.displayReceipt(); // Your cool receipt is back!
 
-                case 1:
-                    System.out.print("Enter ID: ");
-                    String id = scanner.next();
+            } else if (choice.equals("2")) {
+                System.out.print("Enter Product ID: ");
+                String id = input.nextLine();
 
-                    System.out.print("Enter Name: ");
-                    String name = scanner.next();
+                System.out.print("Amount to Sell: ");
+                try {
+                    int qty = Integer.parseInt(input.nextLine());
+                    myTuckShop.sellProduct(id, qty);
+                } catch (NumberFormatException e) {
+                    System.out.println("ERROR: Please enter a whole number for quantity.");
+                }
 
-                    System.out.print("Enter Price: ");
-                    double price = scanner.nextDouble();
-
-                    System.out.print("Enter Quantity: ");
-                    int qty = scanner.nextInt();
-
-                    inventory.addProduct(new product(id, name, price, qty));
-                    System.out.println("Product added.");
-                    break;
-
-                case 2:
-                    inventory.viewProducts();
-                    break;
-
-                case 3:
-                    System.out.print("Enter Product ID: ");
-                    String sellId = scanner.next();
-
-                    System.out.print("Enter Quantity: ");
-                    int sellQty = scanner.nextInt();
-
-                    boolean success = inventory.sellProduct(sellId, sellQty);
-
-                    if (success) {
-                        transactionsList.add(new transactions(sellId, sellQty));
-                        System.out.println("Sale successful.");
-                    }
-                    break;
-
-                case 4:
-                    inventory.lowStockAlert(5);
-                    break;
-
-                case 5:
-                    System.out.println("Exiting system...");
-                    return;
-
-                default:
-                    System.out.println("Invalid option.");
+            } else if (choice.equals("3")) {
+                active = false;
+                System.out.println("Shutting down... Goodbye!");
+            } else {
+                System.out.println("Invalid choice, try again.");
             }
         }
+        input.close();
     }
 }
