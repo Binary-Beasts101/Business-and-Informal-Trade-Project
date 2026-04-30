@@ -2,15 +2,14 @@ package com.tuckshop.main;
 
 import java.util.Scanner;
 import com.tuckshop.model.Product;
-import com.tuckshop.model.Food; // Import Food if you are using it
+import com.tuckshop.model.Food;
 import com.tuckshop.services.InventoryManager;
 
-public class Main {
+public class main {
     public static void main(String[] args) {
         InventoryManager myTuckShop = new InventoryManager();
         Scanner input = new Scanner(System.in);
 
-        // Your pre-loaded items
         myTuckShop.registerNewProduct(new Food("P01", "Coke", 12.50, 10, 140));
         myTuckShop.registerNewProduct(new Food("P02", "Chips", 8.00, 20, 250));
 
@@ -25,7 +24,7 @@ public class Main {
             String choice = input.nextLine();
 
             if (choice.equals("1")) {
-                myTuckShop.displayReceipt(); // Your cool receipt is back!
+                myTuckShop.displayReceipt();
 
             } else if (choice.equals("2")) {
                 System.out.print("Enter Product ID: ");
