@@ -13,6 +13,7 @@ This is a Java application designed to be a digital version of the shop's ledger
 3. Bosa Moabi 202407255
 4. ⁠Brandon Mooketsi 202503036
 5. Brian Thabang Ramhago 202400664
+6. Phenyo Seidisa 202502203
 
 # Features
 1. Add new products to the shop inventory
