@@ -49,7 +49,7 @@ CONSTRUCTORS:
  PerishableFood.java: Constructor with 6 parameters (calls super constructor)
  transactions.java: Constructor with 2 parameters plus automatic timestamp
 
-NON-STATIC METHODS:
+NON-STATIC / INSTANCE METHODS:
  InventoryManager.java: registerNewProduct(), displayReceipt(), sellProduct()
  Inventory.java: addProduct(), viewProducts(), findProductById()
 
