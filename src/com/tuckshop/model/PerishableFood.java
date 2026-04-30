@@ -9,4 +9,9 @@ public class PerishableFood extends Food {
     }
 
     public String getExpiryDate() { return expiryDate; }
+
+    @Override 
+    public String getDisplayInfo(){
+        return super.getDisplayInfo() + " | Expiry: " + getExpiryDate();
+    }
 }
