@@ -1,55 +1,74 @@
-CSI 142 MINI GROUP PROJECT
+CSI 142 MINI GROUP PROJECT: OOP ELEMENT MAPPING
+Project Title: Business-and-Informal-Trade-Project (Tuck Shop Management System)
 
-Team members:
-1.Ashley Mukuku 202208030
-2.Ashley Masalila 202502860
-3.Bosa Moabi 202407255
-⁠4.Brandon Mooketsi 202503036
-5.Brian Thabang Ramhago 202400664
-6.Phenyo Seidisa 202502203
+Team Name: Binary-Beasts101
 
-OOP ELEMENT MAPPING IN BUSINESS-AND-INFORMAL-TRADE-PROJECT
+TEAM MEMBERS
 
-ENCAPSULATION:
- Product.java: Private instance variables (id, name, price, quantity) with public getter/setter methods
- Food.java: Private calories field with public getCalories() method
- PerishableFood.java: Private expiryDate field with public getExpiryDate() method
- InventoryManager.java: Private stockList and totalRevenue with controlled access methods
- Inventory.java: Private productsList ArrayList with controlled access methods
+Ashley Mukuku - 202208030
 
-INHERITANCE:
-Product.java: Is the parent class
-Food.java: Extends Product class (single inheritance)
- PerishableFood.java: Extends Food class (multi-level inheritance hierarchy)
+Ashley Masalila - 202502860
 
-POLYMORPHISM (METHOD OVERRIDING):
- Food.java: Overrides getDisplayInfo() abstract method from Product
-PerishableFood.java: Overrides getDisplayInfo() abstract method (calls super.getDisplayInfo())
+Bosa Moabi - 202407255
 
-ABSTRACTION:
- Product.java: Abstract class with abstract method getDisplayInfo()
- Product.java: Forces all subclasses to implement getDisplayInfo()
+Brandon Mooketsi - 202503036
 
-CLASSES:
-Product.java: Abstract base class for all products
-Food.java: Concrete class representing food items
- PerishableFood.java: Concrete class representing perishable food items
- InventoryManager.java: Service class managing inventory operations
- Inventory.java: Utility class for product list management
- transactions.java: Model class for tracking sales transactions
- Main.java: Entry point class for the application
+Brian Thabang Ramhago - 202400664
 
-COMPOSITION:
- InventoryManager.java: Contains ArrayList of Product objects
- Inventory.java: Contains ArrayList of Product objects
+Phenyo Seidisa - 202502203
 
-CONSTRUCTORS:
- Product.java: Constructor with 4 parameters (id, name, price, quantity)
- Food.java: Constructor with 5 parameters (calls super constructor)
- PerishableFood.java: Constructor with 6 parameters (calls super constructor)
- transactions.java: Constructor with 2 parameters plus automatic timestamp
+1. ENCAPSULATION
 
-NON-STATIC / INSTANCE METHODS:
- InventoryManager.java: registerNewProduct(), displayReceipt(), sellProduct()
- Inventory.java: addProduct(), viewProducts(), findProductById()
+Product.java: Protects data using private instance variables (id, name, price, quantity) with public getter and setter methods.
 
+Food.java: Maintains a private calories field with a public getCalories() method.
+
+PerishableFood.java: Uses a private expiryDate field with a public getExpiryDate() method.
+
+InventoryManager.java: Encapsulates the stockList and totalRevenue variables, ensuring controlled access through specific methods.
+
+2. INHERITANCE
+
+Product.java: Serves as the abstract parent class.
+
+Food.java: Implements Single Inheritance by extending the Product class.
+
+PerishableFood.java: Implements Multi-level Inheritance by extending Food, which extends Product.
+
+3. POLYMORPHISM (Method Overriding)
+
+Food.java: Overrides the getDisplayInfo() abstract method from the Product class.
+
+PerishableFood.java: Overrides getDisplayInfo() and utilizes super.getDisplayInfo() to include parent data.
+
+4. ABSTRACTION
+
+Product.java: Defined as an abstract class with an abstract method getDisplayInfo(), forcing implementation in all subclasses.
+
+5. CLASSES & RESPONSIBILITIES
+
+Product.java: Abstract base class for core item attributes.
+
+Food.java: Concrete class representing non-perishable food items.
+
+PerishableFood.java: Concrete class representing items with expiration dates.
+
+InventoryManager.java: Service class managing inventory operations and revenue tracking.
+
+Main.java: The execution entry point containing the system menu and user loop.
+
+6. COMPOSITION
+
+InventoryManager.java: Demonstrates Composition by containing an ArrayList of Product objects.
+
+7. CONSTRUCTORS
+
+Product.java: Implements a constructor with 4 parameters to initialize core attributes.
+
+Food.java: Uses a 5-parameter constructor that calls the super constructor.
+
+PerishableFood.java: Uses a 6-parameter constructor, chain-loading through super().
+
+8. NON-STATIC / INSTANCE METHODS
+
+InventoryManager.java: registerNewProduct(), displayReceipt(), sellProduct(), and restockProduct()
