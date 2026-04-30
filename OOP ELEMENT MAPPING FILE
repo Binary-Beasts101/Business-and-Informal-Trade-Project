@@ -1,0 +1,55 @@
+CSI 142 MINI GROUP PROJECT
+
+Team members:
+1.Ashley Mukuku 202208030
+2.Ashley Masalila 202502860
+3.Bosa Moabi 202407255
+⁠4.Brandon Mooketsi 202503036
+5.Brian Thabang Ramhago 202400664
+6.Phenyo Seidisa 202502203
+
+OOP ELEMENT MAPPING IN BUSINESS-AND-INFORMAL-TRADE-PROJECT
+
+ENCAPSULATION:
+ Product.java: Private instance variables (id, name, price, quantity) with public getter/setter methods
+ Food.java: Private calories field with public getCalories() method
+ PerishableFood.java: Private expiryDate field with public getExpiryDate() method
+ InventoryManager.java: Private stockList and totalRevenue with controlled access methods
+ Inventory.java: Private productsList ArrayList with controlled access methods
+
+INHERITANCE:
+Product.java: Is the parent class
+Food.java: Extends Product class (single inheritance)
+ PerishableFood.java: Extends Food class (multi-level inheritance hierarchy)
+
+POLYMORPHISM (METHOD OVERRIDING):
+ Food.java: Overrides getDisplayInfo() abstract method from Product
+PerishableFood.java: Overrides getDisplayInfo() abstract method (calls super.getDisplayInfo())
+
+ABSTRACTION:
+ Product.java: Abstract class with abstract method getDisplayInfo()
+ Product.java: Forces all subclasses to implement getDisplayInfo()
+
+CLASSES:
+Product.java: Abstract base class for all products
+Food.java: Concrete class representing food items
+ PerishableFood.java: Concrete class representing perishable food items
+ InventoryManager.java: Service class managing inventory operations
+ Inventory.java: Utility class for product list management
+ transactions.java: Model class for tracking sales transactions
+ Main.java: Entry point class for the application
+
+COMPOSITION:
+ InventoryManager.java: Contains ArrayList of Product objects
+ Inventory.java: Contains ArrayList of Product objects
+
+CONSTRUCTORS:
+ Product.java: Constructor with 4 parameters (id, name, price, quantity)
+ Food.java: Constructor with 5 parameters (calls super constructor)
+ PerishableFood.java: Constructor with 6 parameters (calls super constructor)
+ transactions.java: Constructor with 2 parameters plus automatic timestamp
+
+NON-STATIC METHODS:
+ InventoryManager.java: registerNewProduct(), displayReceipt(), sellProduct()
+ Inventory.java: addProduct(), viewProducts(), findProductById()
+

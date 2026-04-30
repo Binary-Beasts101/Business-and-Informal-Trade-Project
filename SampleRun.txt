@@ -1,0 +1,26 @@
+PS C:\Users\BigPharma\Downloads\Business-and-Informal-Trade-Project-main\Business-and-Informal-Trade-Project-main> javac -d out (Get-ChildItem src/com/tuckshop/model/*.java) (Get-ChildItem src/com/tuckshop/services/*.java) src/com/tuckshop/main/Main.java; java -cp out com.tuckshop.main.Main
+
+
+========================================
+   TUCK SHOP MANAGEMENT SYSTEM v1.0   
+========================================
+1. View Current Stock
+2. Sell Item
+3. Restock Item (Add Inventory)
+4. Exit System
+Select Option: 3
+Enter Product ID to Restock: P01
+Amount to Add: 5
+
+--- RESTOCK SUCCESSFUL ---
+Updated Coke stock to: 15
+SUCCESS: Inventory updated.
+
+========================================
+   TUCK SHOP MANAGEMENT SYSTEM v1.0   
+========================================
+1. View Current Stock
+2. Sell Item
+3. Restock Item (Add Inventory)
+4. Exit System
+Select Option: 
