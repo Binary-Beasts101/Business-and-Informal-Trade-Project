@@ -10,7 +10,7 @@ import com.tuckshop.model.Product;
 
 public class InventoryManager {
     private ArrayList<Product> stockList = new ArrayList<>();
-    private double totalRevenue = 0.0; // Added for receipt tracking
+    private double totalRevenue = 0.0;
 
     public void registerNewProduct(Product item) {
         stockList.add(item);
@@ -44,6 +44,24 @@ public class InventoryManager {
                     System.out.println("Total Price: P" + String.format("%.2f", saleTotal));
                 } else {
                     System.out.println("\nERROR: Not enough stock or invalid amount!");
+                }
+                return;
+            }
+        }
+        System.out.println("\nERROR: Product ID '" + id + "' not found.");
+    }
+
+    // ADDING THIS SO MAIN.JAVA STOPS SHOWING RED ERRORS
+    public void restockProduct(String id, int amount) {
+        for (Product item : stockList) {
+            if (item.getId().equalsIgnoreCase(id)) {
+                if (amount > 0) {
+                    item.setQuantity(item.getQuantity() + amount);
+                    System.out.println("\n--- RESTOCK SUCCESSFUL ---");
+                    System.out.println("Added: " + amount + " to " + item.getName());
+                    System.out.println("New Stock Level: " + item.getQuantity());
+                } else {
+                    System.out.println("\nERROR: Restock amount must be positive!");
                 }
                 return;
             }

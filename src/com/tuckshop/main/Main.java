@@ -1,7 +1,6 @@
 package com.tuckshop.main;
 
 import java.util.Scanner;
-import com.tuckshop.model.Product;
 import com.tuckshop.model.Food;
 import com.tuckshop.services.InventoryManager;
 
@@ -18,7 +17,8 @@ public class Main {
             System.out.println("\n--- TUCK SHOP MANAGEMENT SYSTEM ---");
             System.out.println("1. View Stock/Receipt");
             System.out.println("2. Sell Item");
-            System.out.println("3. Exit System");
+            System.out.println("3. Restock Product");
+            System.out.println("4. Exit System");
             System.out.print("Select Option: ");
 
             String choice = input.nextLine();
@@ -29,20 +29,30 @@ public class Main {
             } else if (choice.equals("2")) {
                 System.out.print("Enter Product ID: ");
                 String id = input.nextLine();
-
                 System.out.print("Amount to Sell: ");
                 try {
                     int qty = Integer.parseInt(input.nextLine());
                     myTuckShop.sellProduct(id, qty);
                 } catch (NumberFormatException e) {
-                    System.out.println("ERROR: Please enter a whole number for quantity.");
+                    System.out.println("ERROR: Enter a whole number.");
                 }
 
             } else if (choice.equals("3")) {
+                System.out.print("Enter Product ID: ");
+                String id = input.nextLine();
+                System.out.print("Amount to Add: ");
+                try {
+                    int qty = Integer.parseInt(input.nextLine());
+                    myTuckShop.restockProduct(id, qty);
+                } catch (NumberFormatException e) {
+                    System.out.println("ERROR: Enter a whole number.");
+                }
+
+            } else if (choice.equals("4")) {
                 active = false;
-                System.out.println("Shutting down... Goodbye!");
+                System.out.println("Goodbye!");
             } else {
-                System.out.println("Invalid choice, try again.");
+                System.out.println("Invalid choice.");
             }
         }
         input.close();
