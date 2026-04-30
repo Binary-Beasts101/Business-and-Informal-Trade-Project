@@ -5,7 +5,7 @@ import com.tuckshop.model.Product;
 import com.tuckshop.model.Food;
 import com.tuckshop.services.InventoryManager;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         InventoryManager myTuckShop = new InventoryManager();
         Scanner input = new Scanner(System.in);
