@@ -11,4 +11,8 @@ public class Food extends Product {
     public int getCalories() {
         return calories;
     }
+    @Override
+    public String getDisplayInfo(){
+        return "ID: " + getId() + " | Name: " + getName() + " | Calories: " + getCalories();
+    }
 }
