@@ -26,6 +26,34 @@ The TuckShop Management System is a Java based terminal application designed to 
 2.  **Sell Item**: Select a Product ID and quantity to process a customer transaction
 3.  **Restock Product**: Add stock to existing products
 4.  **Exit System**: Safely closes
+
+Business-and-Informal-Trade-Project/
+
+└── src/
+
+    └── com/
+    
+        └── tuckshop/
+        
+            ├── main/
+            
+            │   └── main.java
+            
+            ├── model/
+            
+            │   ├── Food.java
+            
+            │   ├── PerishableFood.java
+            
+            │   ├── Product.java
+            
+            │   └── transactions.java
+            
+            └── services/
+            
+                ├── Inventory.java
+                
+                └── InventoryManager.java
  
 ## Sample Run
 
