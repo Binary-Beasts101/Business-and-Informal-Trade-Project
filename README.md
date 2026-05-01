@@ -70,12 +70,19 @@ Select Option:
 *   **Version Control**: Git/GitHub
 
 ## How to compile and run
+Installation and Running the Application
+To run the Tuck Shop Management System, ensure you are using Cmder or a similar Bash-like terminal. Follow these steps:
+
+Clone the Repository:
 git clone https://github.com/Binary-Beasts101/Business-and-Informal-Trade-Project.git
 
-cd TuckShopManager
 
-javac -d out -sourcepath src src/app/Main.java
+Navigate to the project directory:
+cd Business-and-Informal-Trade-Project
 
-java -cp out app.Main            
+Compile the source code:
+javac -d . src/com/tuckshop/model/*.java src/com/tuckshop/services/*.java src/com/tuckshop/main/Main.java
 
+Run the application:
+java com.tuckshop.main.Main
 
