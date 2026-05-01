@@ -22,3 +22,12 @@ Phenyo Seidisa - 202502203
 4. ABSTRACTION: Product is an abstract class with an abstract method getDisplayInfo().
 5. COMPOSITION: InventoryManager has an ArrayList of Product objects.
 6. RESPONSIBILITIES: InventoryManager handles logic (sellProduct, restockProduct), while Main handles the menu loop.
+7.NON-STATIC METHODS:InventoryManager.java: registerNewProduct(), displayReceipt(), sellProduct(), Inventory.java: addProduct(), viewProducts(), findProductById()
+8.CLASSES:
+Product.java: Abstract base class for all products
+Food.java: Concrete class representing food items
+ PerishableFood.java: Concrete class representing perishable food items
+ InventoryManager.java: Service class managing inventory operations
+ Inventory.java: Utility class for product list management
+ transactions.java: Model class for tracking sales transactions
+ Main.java: Entry point class for the application
