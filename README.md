@@ -1,16 +1,17 @@
 # TuckShop Management System
-Course:CSI 142 - Object Oriented Programming  
-Institution:University of Botswana  
+Course: CSI 142 - Object Oriented Programming  
+Institution: University of Botswana  
 
 ## Project Overview
 The TuckShop Management System is a Java based terminal application designed to help shop owners manage inventory and track daily sales. It provides a centralized place to store product details, log transactions, and monitor stock levels in real time.
 
 ## Key Features
 *   **Inventory Registration**: Record new items with names, buying/selling prices, and quantity.
-*   **Real-time Sales Processing**: Automatically deducts stock and adds to the daily revenue total upon sale.
+*   **Real-time Sales Processing**: Automatically deducts stock and adds to the daily revenue total upon saleprocess.
 *   **Low Stock Alerts**: Highlights any product with fewer than 5 units remaining to prompt restocking.
 *   **Financial Reporting**: Displays total revenue and estimated profit summaries.
 *   **Input Validation**: Built-in handling for invalid inputs (e.g., text where numbers are expected) to prevent system crashes
+*   **Searching**: Look for a product by name.
 
 ## Project Team (Binary-Beasts101)
 *   **Ashley Mukuku** (202208030)
@@ -24,9 +25,27 @@ The TuckShop Management System is a Java based terminal application designed to 
 1.  **View Stock/Receipt**: Displays current inventory, stock levels, and total revenue.
 2.  **Sell Item**: Select a Product ID and quantity to process a customer transaction
 3.  **Restock Product**: Add stock to existing products
-4.  **Exit System**: Safely closes the application
+4.  **Exit System**: Safely closes
+ 
+## Sample Run
+
+====TUCKSHOP MANAGEMENT SYSTEM====
+ 1. View Stock / Receipt 
+ 2. Sell item
+ 3. Restock product
+ 4. Exit System 
+Select Option:
 
 ## Technical Setup
 *   **Language**: Java
 *   **Editor**: VS Code
 *   **Version Control**: Git/GitHub
+
+## How to compile and run
+git clone https://github.com/Binary-Beasts101/Business-and-Informal-Trade-Project.git
+
+cd TuckShopManager
+
+javac -d out -sourcepath src src/app/Main.java
+
+java -cp out app.Main
