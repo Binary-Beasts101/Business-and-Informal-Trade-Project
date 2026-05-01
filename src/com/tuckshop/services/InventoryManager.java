@@ -51,7 +51,7 @@ public class InventoryManager {
         System.out.println("\nERROR: Product ID '" + id + "' not found.");
     }
 
-    // ADDING THIS SO MAIN.JAVA STOPS SHOWING RED ERRORS
+
     public void restockProduct(String id, int amount) {
         for (Product item : stockList) {
             if (item.getId().equalsIgnoreCase(id)) {
