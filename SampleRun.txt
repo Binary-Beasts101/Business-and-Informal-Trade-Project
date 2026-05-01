@@ -1,3 +1,7 @@
+C:\Users\BigPharma\Desktop
+λ git clone https://github.com/Binary-Beasts101/Business-and-Informal-Trade-Project.git
+fatal: destination path 'Business-and-Informal-Trade-Project' already exists and is not an empty directory.
+
 C:\Users\BigPharma\Downloads\Business-and-Informal-Trade-Project-main                                                                                           
 λ cd Business-and-Informal-Trade-Project-main                                                                                                                   
                                                                                                                                                                 
