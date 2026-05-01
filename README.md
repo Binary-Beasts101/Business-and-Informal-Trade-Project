@@ -1,39 +1,34 @@
-# TuckShop Manager
+# TuckShop Management System
+**Course:** CSI 142 - Object Oriented Programming  
+**Institution:** University of Botswana  
 
-CSI142 Object Oriented Programming — Group Mini-Project, Semester II 2025/26
+---
 
-# University of Botswana | Department of Computer Science
+## 📌 Project Overview
+The **TuckShop Management System** is a Java-based terminal application designed to help shop owners manage inventory and track daily sales[cite: 1]. It provides a centralized place to store product details, log transactions, and monitor stock levels in real-time[cite: 1, 2].
 
-# Project Overview
-This is a Java application designed to be a digital version of the shop's ledger. It will provide a central place to store product details and log every sale as it happens. It will contain a screen to register new items with their name, buying price, selling price, and quantity.A simple interface where the owner selects an item and clicks "Sell." The system will automatically subtract from the stock and add the money to the daily total. The program will also highlight any item that has less than 5 units left so the owner knows what to buy next. A feature that shows the total sales and estimated p A screen to register new items with their name, buying price, selling price, and quantity.
+## 🚀 Key Features
+*   **Inventory Registration**: Record new items with names, buying/selling prices, and quantities[cite: 1].
+*   **Real-time Sales Processing**: Automatically deducts stock and adds to the daily revenue total upon sale[cite: 1, 2].
+*   **Low Stock Alerts**: Highlights any product with fewer than 5 units remaining to prompt restocking[cite: 1].
+*   **Financial Reporting**: Displays total revenue and estimated profit summaries[cite: 1].
+*   **Input Validation**: Built-in handling for invalid inputs (e.g., text where numbers are expected) to prevent system crashes[cite: 2].
 
-# Team Members
-1. Ashley Mukuku 202208030
-2. Ashley Masalila 202502860
-3. Bosa Moabi 202407255
-4. ⁠Brandon Mooketsi 202503036
-5. Brian Thabang Ramhago 202400664
-6. Phenyo Seidisa 202502203
+## 👥 Project Team (Binary-Beasts101)
+*   **Ashley Mukuku** (202208030)[cite: 2]
+*   **Ashley Masalila** (202502860)[cite: 2]
+*   **Bosa Moabi** (202407255)[cite: 2]
+*   **Brandon Mooketsi** (202503036)[cite: 2]
+*   **Brian Thabang Ramhago** (202400664)[cite: 2]
+*   **Phenyo Seidisa** (202502203)[cite: 2]
 
-# Features
-1. Add new products to the shop inventory
-2. View all current stock with quantities and prices
-3. Process a customer sale (removing an item from stock list as customer buys)
-4. Search for products by name
-5. Restocking an existing product
-6. View a sales summary
-7. Handles invalid input without crashing (e.g. letters where numbers expected)
+## 🛠️ System Menu Guide
+1.  **View Stock/Receipt**: Displays current inventory, stock levels, and total revenue[cite: 2].
+2.  **Sell Item**: Select a Product ID and quantity to process a customer transaction[cite: 2].
+3.  **Restock Product**: Add stock to existing products[cite: 2].
+4.  **Exit System**: Safely closes the application[cite: 2].
 
-
-
-      TUCKSHOP MANAGER SYSTEM
-====================================
- 1. Add new product
- 2. View all stock
- 3. Process a sale
- 4. Search for product
- 5. Restock a product
- 6. View sales report
- 0. Exit
-================================
-Enter your choice:
+## 💻 Technical Setup
+*   **Language**: Java[cite: 1]
+*   **Editor**: VS Code[cite: 1]
+*   **Version Control**: Git/GitHub[cite: 1, 2]
