@@ -1,26 +1,63 @@
-PS C:\Users\BigPharma\Downloads\Business-and-Informal-Trade-Project-main\Business-and-Informal-Trade-Project-main> javac -d out (Get-ChildItem src/com/tuckshop/model/*.java) (Get-ChildItem src/com/tuckshop/services/*.java) src/com/tuckshop/main/Main.java; java -cp out com.tuckshop.main.Main
-
-
-========================================
-   TUCK SHOP MANAGEMENT SYSTEM v1.0   
-========================================
-1. View Current Stock
-2. Sell Item
-3. Restock Item (Add Inventory)
-4. Exit System
-Select Option: 3
-Enter Product ID to Restock: P01
-Amount to Add: 5
-
---- RESTOCK SUCCESSFUL ---
-Updated Coke stock to: 15
-SUCCESS: Inventory updated.
-
-========================================
-   TUCK SHOP MANAGEMENT SYSTEM v1.0   
-========================================
-1. View Current Stock
-2. Sell Item
-3. Restock Item (Add Inventory)
-4. Exit System
-Select Option: 
+C:\Users\BigPharma\Downloads\Business-and-Informal-Trade-Project-main                                                                                           
+λ cd Business-and-Informal-Trade-Project-main                                                                                                                   
+                                                                                                                                                                
+C:\Users\BigPharma\Downloads\Business-and-Informal-Trade-Project-main\Business-and-Informal-Trade-Project-main (main -> origin)                                 
+λ javac -d . src/com/tuckshop/model/Product.java src/com/tuckshop/model/Food.java src/com/tuckshop/model/PerishableFood.java src/com/tuckshop/model/transactions
+c/com/tuckshop/services/InventoryManager.java src/com/tuckshop/main/Main.java                                                                                   
+                                                                                                                                                                
+C:\Users\BigPharma\Downloads\Business-and-Informal-Trade-Project-main\Business-and-Informal-Trade-Project-main (main -> origin)                                 
+λ java com.tuckshop.main.Main                                                                                                                                   
+                                                                                                                                                                
+--- TUCK SHOP MANAGEMENT SYSTEM ---                                                                                                                             
+1. View Stock/Receipt                                                                                                                                           
+2. Sell Item                                                                                                                                                    
+3. Restock Product                                                                                                                                              
+4. Exit System                                                                                                                                                  
+Select Option: 1                                                                                                                                                
+                                                                                                                                                                
+======= OFFICIAL TUCK SHOP RECEIPT =======                                                                                                                      
+ID         NAME            PRICE      STOCK                                                                                                                     
+-------------------------------------------                                                                                                                     
+P01        Coke            P12.50     10                                                                                                                        
+P02        Chips           P8.00      20                                                                                                                        
+-------------------------------------------                                                                                                                     
+TOTAL REVENUE COLLECTED: P0.00                                                                                                                                  
+===========================================                                                                                                                     
+                                                                                                                                                                
+                                                                                                                                                                
+--- TUCK SHOP MANAGEMENT SYSTEM ---                                                                                                                             
+1. View Stock/Receipt                                                                                                                                           
+2. Sell Item                                                                                                                                                    
+3. Restock Product                                                                                                                                              
+4. Exit System                                                                                                                                                  
+Select Option: 3                                                                                                                                                
+Enter Product ID: P01                                                                                                                                           
+Amount to Add: 2                                                                                                                                                
+                                                                                                                                                                
+--- RESTOCK SUCCESSFUL ---                                                                                                                                      
+Added: 2 to Coke                                                                                                                                                
+New Stock Level: 12                                                                                                                                             
+                                                                                                                                                                
+--- TUCK SHOP MANAGEMENT SYSTEM ---                                                                                                                             
+1. View Stock/Receipt                                                                                                                                           
+2. Sell Item                                                                                                                                                    
+3. Restock Product                                                                                                                                              
+4. Exit System                                                                                                                                                  
+Select Option: 2                                                                                                                                                
+Enter Product ID: P01                                                                                                                                           
+Amount to Sell: 4                                                                                                                                               
+                                                                                                                                                                
+--- SALE SUCCESSFUL ---                                                                                                                                         
+Sold: 4 x Coke                                                                                                                                                  
+Total Price: P50.00                                                                                                                                             
+                                                                                                                                                                
+--- TUCK SHOP MANAGEMENT SYSTEM ---                                                                                                                             
+1. View Stock/Receipt                                                                                                                                           
+2. Sell Item                                                                                                                                                    
+3. Restock Product                                                                                                                                              
+4. Exit System                                                                                                                                                  
+Select Option: 4                                                                                                                                                
+Goodbye!                                                                                                                                                        
+                                                                                                                                                                
+C:\Users\BigPharma\Downloads\Business-and-Informal-Trade-Project-main\Business-and-Informal-Trade-Project-main (main -> origin)                                 
+λ                                                                                                                                                               

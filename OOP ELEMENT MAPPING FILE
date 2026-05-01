@@ -1,7 +1,6 @@
-CSI 142 MINI GROUP PROJECT: OOP ELEMENT MAPPING
-Project Title: Business-and-Informal-Trade-Project (Tuck Shop Management System)
-
-Team Name: Binary-Beasts101
+GROUP PROJECT: OOP ELEMENT MAPPING
+Project: Business-and-Informal-Trade-Project (Tuck Shop Management System)
+Team: Binary-Beasts101
 
 TEAM MEMBERS
 
@@ -17,58 +16,18 @@ Brian Thabang Ramhago - 202400664
 
 Phenyo Seidisa - 202502203
 
-1. ENCAPSULATION
+1. ENCAPSULATION: Private variables in Product.java (id, name, price, quantity) accessed via public getters/setters.
+2. INHERITANCE: Food extends Product (Single); PerishableFood extends Food (Multi-level).
+3. POLYMORPHISM: getDisplayInfo() is overridden in Food and PerishableFood.
+4. ABSTRACTION: Product is an abstract class with an abstract method getDisplayInfo().
+5. COMPOSITION: InventoryManager has an ArrayList of Product objects.
+6. RESPONSIBILITIES: InventoryManager handles logic (sellProduct, restockProduct), while Main handles the menu loop.
 
-Product.java: Protects data using private instance variables (id, name, price, quantity) with public getter and setter methods.
+2. UML Diagram (One-Page Word Guide)
+To keep your UML DIAGRAM.docx on one page:
 
-Food.java: Maintains a private calories field with a public getCalories() method.
+Open the file in Word (not VS Code).
 
-PerishableFood.java: Uses a private expiryDate field with a public getExpiryDate() method.
+Remove the Inventory Box: Since we deleted Inventory.java, delete its box entirely.
 
-InventoryManager.java: Encapsulates the stockList and totalRevenue variables, ensuring controlled access through specific methods.
-
-2. INHERITANCE
-
-Product.java: Serves as the abstract parent class.
-
-Food.java: Implements Single Inheritance by extending the Product class.
-
-PerishableFood.java: Implements Multi-level Inheritance by extending Food, which extends Product.
-
-3. POLYMORPHISM (Method Overriding)
-
-Food.java: Overrides the getDisplayInfo() abstract method from the Product class.
-
-PerishableFood.java: Overrides getDisplayInfo() and utilizes super.getDisplayInfo() to include parent data.
-
-4. ABSTRACTION
-
-Product.java: Defined as an abstract class with an abstract method getDisplayInfo(), forcing implementation in all subclasses.
-
-5. CLASSES & RESPONSIBILITIES
-
-Product.java: Abstract base class for core item attributes.
-
-Food.java: Concrete class representing non-perishable food items.
-
-PerishableFood.java: Concrete class representing items with expiration dates.
-
-InventoryManager.java: Service class managing inventory operations and revenue tracking.
-
-Main.java: The execution entry point containing the system menu and user loop.
-
-6. COMPOSITION
-
-InventoryManager.java: Demonstrates Composition by containing an ArrayList of Product objects.
-
-7. CONSTRUCTORS
-
-Product.java: Implements a constructor with 4 parameters to initialize core attributes.
-
-Food.java: Uses a 5-parameter constructor that calls the super constructor.
-
-PerishableFood.java: Uses a 6-parameter constructor, chain-loading through super().
-
-8. NON-STATIC / INSTANCE METHODS
-
-InventoryManager.java: registerNewProduct(), displayReceipt(), sellProduct(), and restockProduct()
+Update InventoryManager: Ensure the box for InventoryManager shows the stockList and the restockProduct() method.
