@@ -1,5 +1,5 @@
 GROUP PROJECT: OOP ELEMENT MAPPING
-Project: Business-and-Informal-Trade-Project (Tuck Shop Management System)
+Project: Business and-Informal Trade Project (Tuck Shop Management System)
 Team: Binary-Beasts101
 
 TEAM MEMBERS
@@ -22,12 +22,3 @@ Phenyo Seidisa - 202502203
 4. ABSTRACTION: Product is an abstract class with an abstract method getDisplayInfo().
 5. COMPOSITION: InventoryManager has an ArrayList of Product objects.
 6. RESPONSIBILITIES: InventoryManager handles logic (sellProduct, restockProduct), while Main handles the menu loop.
-
-2. UML Diagram (One-Page Word Guide)
-To keep your UML DIAGRAM.docx on one page:
-
-Open the file in Word (not VS Code).
-
-Remove the Inventory Box: Since we deleted Inventory.java, delete its box entirely.
-
-Update InventoryManager: Ensure the box for InventoryManager shows the stockList and the restockProduct() method.
