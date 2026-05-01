@@ -1,6 +1,4 @@
-============================================================
-       TUCK SHOP MANAGEMENT SYSTEM - UML STRUCTURE
-============================================================
+ TUCK SHOP MANAGEMENT SYSTEM - UML STRUCTURE
 
 [ Product ] <---------- (Abstract Class)
    |  - id: String
@@ -25,9 +23,7 @@
 [ Main ]
    |  + main(String[] args) <--- (Entry Point)
 
-============================================================
 NOTES: 
 - Product is the parent (Abstract).
 - InventoryManager "Has-a" list of Products.
 - PerishableFood inherits from Food.
-============================================================
