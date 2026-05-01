@@ -76,4 +76,6 @@ cd TuckShopManager
 
 javac -d out -sourcepath src src/app/Main.java
 
-java -cp out app.Main
+java -cp out app.Main            
+
+
